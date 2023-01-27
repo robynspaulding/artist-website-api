@@ -32,3 +32,13 @@ Gallery.create(
   price: "$300.00",
   title: "Leaves and Branches and Thistles"
 )
+
+Resume.create(
+  url: "https://www.pal-art.com/paint-pleasanton-2022/spaulding_tree/",
+  summary: "Merit Award – “Sycamore Sky” by Birgit Spaulding"
+)
+
+Resume.create(
+  url: "http://www.beniciapleinair.com/3rd_annual_paint_out",
+  summary: "Birigit won third place in the Benecia Paint out. Click the link to see more!"
+)
