@@ -42,3 +42,7 @@ Resume.create(
   url: "http://www.beniciapleinair.com/3rd_annual_paint_out",
   summary: "Birigit won third place in the Benecia Paint out. Click the link to see more!"
 )
+
+Bio.create(
+  bio: "Birgit Spaulding is a Felton based artist with a background in multiple medias including Soft Pastels, Oils, Ink Illustrations and more. A mother of three, Birgit has a passion for her art and loves to share her work and knowledge with others in the community through attending paint outs, classes with other artists, and opening her home to students."
+)
