@@ -12,7 +12,7 @@ class BiosController < ApplicationController
 
   def create
     @bio = Bio.new(
-      bio: params[:bio]
+      summary: params[:summary]
     )
     @bio.save
     render json: @bio.as_json
@@ -20,7 +20,7 @@ class BiosController < ApplicationController
 
   def update
     @bio = Bio.find_by(id: params[:id])
-    @bio.bio = params[:bio] || @bio.bio
+    @bio.summary = params[:summary] || @bio.summary
     
     @bio.save
     render json: @bio.as_json
