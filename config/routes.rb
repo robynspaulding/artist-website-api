@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "galleries/:id" => "galleries#show"
   post "galleries" => "galleries#create"
   patch "galleries/:id" => "galleries#update"
+  delete "galleries/:id" => "galleries#destroy"
 
 
 end

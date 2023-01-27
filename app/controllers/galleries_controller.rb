@@ -35,4 +35,11 @@ class GalleriesController < ApplicationController
     @gallery.save
     render json: @gallery.as_json
   end
+
+  def destroy
+    @gallery = Gallery.find_by(id: params[:id])
+
+    @gallery.destroy
+    render json: { message: "Selection successfully destoryed!"}
+  end
 end
