@@ -9,4 +9,30 @@ class GalleriesController < ApplicationController
     @gallery = Gallery.find_by(id: params[:id])
     render json: @gallery.as_json
   end
+
+  def create
+    @gallery = Gallery.new(
+      image: params[:image],
+      description: params[:description],
+      materials: params[:materials],
+      size: params[:size],
+      price: params[:price],
+      title: params[:title]
+    )
+    @gallery.save
+    render json: @gallery.as_json
+  end
+
+  def update
+    @gallery = Gallery.find_by(id: params[:id])
+    @gallery.image = params[:image] || @gallery.image
+    @gallery.description = params[:description] || @gallery.description
+    @gallery.materials = params[:materials] || @gallery.materials
+    @gallery.size = params[:size] || @gallery.size
+    @gallery.price = params[:price] || @gallery.price
+    @gallery.title = params[:title] || @gallery.title
+
+    @gallery.save
+    render json: @gallery.as_json
+  end
 end

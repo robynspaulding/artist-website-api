@@ -6,5 +6,8 @@ Rails.application.routes.draw do
 
   get "galleries" => "galleries#index"
   get "galleries/:id" => "galleries#show"
+  post "galleries" => "galleries#create"
+  patch "galleries/:id" => "galleries#update"
+
 
 end
