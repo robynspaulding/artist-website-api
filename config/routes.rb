@@ -22,5 +22,6 @@ Rails.application.routes.draw do
   patch "bios/:id" => "bios#update"
   delete "bios/:id" => "bios#destroy"
 
+  post "/users" => "users#create"
 
 end
