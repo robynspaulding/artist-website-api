@@ -16,5 +16,11 @@ Rails.application.routes.draw do
   patch "resumes/:id" => "resumes#update"
   delete "resumes/:id" => "resumes#destroy"
 
+  get "bios" => "bios#index"
+  get "bios/:id" => "bios#show"
+  post "bios" => "bios#create"
+  patch "bios/:id" => "bios#update"
+  delete "bios/:id" => "bios#destroy"
+
 
 end

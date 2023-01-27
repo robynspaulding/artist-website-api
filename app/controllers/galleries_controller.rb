@@ -42,4 +42,5 @@ class GalleriesController < ApplicationController
     @gallery.destroy
     render json: { message: "Selection successfully destoryed!"}
   end
+  
 end

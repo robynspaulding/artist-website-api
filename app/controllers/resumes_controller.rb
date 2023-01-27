@@ -1,4 +1,5 @@
 class ResumesController < ApplicationController
+  
   def index
     @resumes = Resume.all
     render json: @resumes.as_json
@@ -33,4 +34,5 @@ class ResumesController < ApplicationController
     @resume.destroy
     render json: { message: "Selection successfully destoryed!"}
   end
+
 end
