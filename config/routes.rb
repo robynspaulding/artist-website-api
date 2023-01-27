@@ -10,5 +10,11 @@ Rails.application.routes.draw do
   patch "galleries/:id" => "galleries#update"
   delete "galleries/:id" => "galleries#destroy"
 
+  get "resumes" => "resumes#index"
+  get "resumes/:id" => "resumes#show"
+  post "resumes" => "resumes#create"
+  patch "resumes/:id" => "resumes#update"
+  delete "resumes/:id" => "resumes#destroy"
+
 
 end
