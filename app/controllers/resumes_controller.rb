@@ -14,7 +14,8 @@ class ResumesController < ApplicationController
   def create
     @resume = Resume.new(
       url: params[:url],
-      summary: params[:summary]
+      summary: params[:summary],
+      date: params[:date]
     )
     @resume.save
     render json: @resume.as_json
@@ -24,6 +25,7 @@ class ResumesController < ApplicationController
     @resume = Resume.find_by(id: params[:id])
     @resume.url = params[:url] || @resume.url
     @resume.summary = params[:summary] || @resume.summary
+    @resume.date = params[:date] || @resume.date
     
     @resume.save
     render json: @resume.as_json

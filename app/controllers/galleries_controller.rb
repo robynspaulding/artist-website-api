@@ -12,8 +12,9 @@ class GalleriesController < ApplicationController
   end
 
   def create
+    image = Cloudinary::Uploader.upload(params[:image])
     @gallery = Gallery.new(
-      image: params[:image],
+      image: image["url"],
       description: params[:description],
       materials: params[:materials],
       size: params[:size],
