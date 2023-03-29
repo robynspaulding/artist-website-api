@@ -46,5 +46,5 @@ With the front end connected you can view the app on http://localhost:5173.
 ## Live site
 
 The live site for artist Birgit Spaulding can be found at
-- <a href="https://www.birgitspaulding.com">  www.birgitspaulding.com<</a>
+- <a href="https://www.birgitspaulding.com">  www.birgitspaulding.com </a>
 
