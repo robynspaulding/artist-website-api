@@ -1,12 +1,10 @@
-#artist-website-api
-React.js Frontend
-
+# artist-website-api
 
 This backend is the api for an artist website that has a Gallery of images, an About page, an Events page, a Contact link, and a secure Signup/Login feature that allows a user to Add/Edit a painting in the Gallery database, Add/Edit an Event and Edit the artists About info. 
 
 The goal of this backend is to allow the user to store all their data, and specificially modify their image uploads as Cloudinary urls that can be easily rendered on the Frontend. 
 
-<img src=""> <img src=""> <img src="" height="800">
+<img src="gallery.png"> <img src="contact.png"> 
 
 # Technology used:
 - Ruby on Rails version 3.1.1
@@ -45,3 +43,6 @@ This api works in conjunction with the React front end fount here
 
 With the front end connected you can view the app on http://localhost:5173.
 
+## Live site
+
+The live site for artist Birgit Spaulding can be found at <a href="www.birgitspaulding.com">www.birgitspaulding.com</a>
