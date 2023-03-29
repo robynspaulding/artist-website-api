@@ -38,7 +38,7 @@ npm install
 rails serve
 ```
 
-This api works in conjunction with the React front end fount here 
+This api works in conjunction with the React front end found here 
 <a href="https://github.com/robynspaulding/Birgit_Spaulding_Fine_Art"> [Artist Name] Fine Arts</a>
 
 With the front end connected you can view the app on http://localhost:5173.
