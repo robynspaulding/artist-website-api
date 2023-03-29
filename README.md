@@ -8,8 +8,8 @@ The goal of this backend is to allow the user to store all their data, and speci
 
 # Technology used:
 - Ruby on Rails version 3.1.1
-React.js
-Cloudinary
+- React.js
+- Cloudinary
 
 ## Installation / Dependencies
 - <a href="https://github.com/robynspaulding/artist-website-api">Ruby on Rails backend </a>
